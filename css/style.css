@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+
+}
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+.main-navigation {
+  color: black;
+  font-weight: 700;
+  text-align: center;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  margin-bottom: 0;
+  
+}
+
+.main-navigation li {
+  flex:0 0 239px;
+  max-width: 239px;
+  text-align: center;
+}
+
+.navigation-logo {
+    flex: 0 0 244px;
+    max-width: 244px;
+}
+
+.main-navigation a {
+
+    color: black;
+}
+
+
+.gorgeous {
+    background-image: url(../img/background-photo.jpg);
+}
+
+.reasons{
+    text-align: center;
+}
+
+.town-row,
+.bridge-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.real-town,
+.bridge {
+    color: white;
+    background-color:#81b3d2;
+    flex: 0 0 400px;
+}
+.square,
+.road,
+.tourists {
+    background-color: #eeeeee;
+}
+.search-hotel {
+    background-color: #766357;
+    color: white;
+}
+
+footer {
+    background-color: #eeeeee;
+}

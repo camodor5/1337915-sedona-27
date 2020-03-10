@@ -3,31 +3,36 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+<div class="wrapper">
     <header>
       <nav>
-        <a>
-          <img src="img/logo.svg" width="140" height="171" alt="Логотип штата Седона">
-        </a>
-        <ul>
+        
+        <ul class="main-navigation">
           <li><a href="info.html">ИНФОРМАЦИЯ</a></li>
           <li><a href="photovideo.html">ФОТО И ВИДЕО</a></li>
+          <li class="navigation-logo"><a>
+            <img src="img/logo.svg" width="140" height="171" alt="Логотип штата Седона">
+          </a></li>
           <li><a href="map.html">КАРТА ШТАТА</a></li>
           <li><a href="hotels.html">ГОСТИНИЦЫ</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="gorgeous">
-        <h2 hidden="hidden">Добро пожаловать в Седону</h2>
+      <div class="gorgeous">
         <img src="img/welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
         <img src="img/polygon.jpg" width="100%" height="59">
-      </section>  
+      </div>  
       <section class="reasons">
         <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p>Рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон!</p>
-        <div class="realtown">
+        <div class="town-row">
+        <div class="real-town">
           <h3>
             Настоящий<br>
             городок
@@ -38,6 +43,8 @@
           </p>
         </div>
         <img src="img/feature-picture.jpg" width="800" height="256" alt="Фото ранчо">
+      </div>
+        
         <ul>
           <li>
             <img src="img/icon-1.svg" width="75" height="72" alt="Домик">
@@ -55,6 +62,8 @@
             <p>Не только китайского, но и местного производства!</p>
           </li>
         </ul>
+        <div class="bridge-row">
+        <img src="img/layer-5.jpg" width="800" height="256" alt="Фото каньона">
         <div class="bridge">
           <h3>
             Там есть<br>
@@ -65,6 +74,7 @@
              вы осмелитесь
           </p>
         </div>
+      </div>
         <div class="square">
           <h3>
             Небольшая<br>
@@ -98,8 +108,8 @@
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
       
-        <form> <!--- здесь будет форма (еще подучу их)-->
-          <h3>Поиск гостиницы в Седоне</h3>
+        <form> 
+          <h3 class="search-hotel">Поиск гостиницы в Седоне</h3>
           <p>
             <label for="arriving">Дата заезда:</label>
             <input type="text" name="arriving" id="arriving" value="24 апреля 2017">
@@ -130,15 +140,15 @@
         <p>Тел: +7(495) 666-02-66 </p>
       </div>
       <ul class="social-media">
-        <li><a href="twitter.com" target="_blank"><img src="twitter-logo.png"></a></li>
-        <li><a href="facebook.com" target="_blank"><img src="facebook-logo.png"></a></li>
-        <li><a href="youtube.com" target="_blank"><img src="youtube-logo.png"></a></li>
+        <li><a href="twitter.com" target="_blank"><img src="img/tw-icon.svg"></a></li>
+        <li><a href="facebook.com" target="_blank"><img src="img/fb-icon.svg"></a></li>
+        <li><a href="youtube.com" target="_blank"><img src="img/youtube-icon.svg"></a></li>
       </ul>
       <div class="website-by">
         <p>Website by</p>
-        <a href="https://htmlacademy.ru/" target="_blank"><img src="htmlacademy-logo.png"></a>
+        <a href="https://htmlacademy.ru/" target="_blank"><img src="img/logo-htmla.svg"></a>
       </div>
     </footer>
-
+  </div>
   </body>
 </html>
